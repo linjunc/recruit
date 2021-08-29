@@ -352,10 +352,11 @@ input[type="submit"]:hover {
 .showBox {
 	position: fixed;
 	display: none;
+	display: block;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	width: 71%;
+	width: 50%;
 	height: 30%;
 	overflow-x: hidden;
 	background-color: skyblue;
@@ -372,16 +373,25 @@ input[type="submit"]:hover {
 
 @media(max-width:1680px) {}
 
-@media(max-width:1600px) {}
+@media(max-width:1600px) {
+	
+}
 
 @media(max-width:1440px) {
 	.agile-voltsub {
 		width: 45%;
 	}
+	.showBox {
+		width: 45%;
+	}
+	
 }
 
 @media(max-width:1366px) {
 	.agile-voltsub {
+		width: 50%;
+	}
+	.showBox {
 		width: 50%;
 	}
 }
@@ -390,10 +400,20 @@ input[type="submit"]:hover {
 	.agile-voltsub {
 		width: 55%;
 	}
+	.showBox {
+		width: 55%;
+	}
 }
-
+@media (max-width:1280px) {
+	.showBox {
+		width: 55%;
+	}
+}
 @media(max-width:1080px) {
 	.agile-voltsub {
+		width: 60%;
+	}
+	.showBox {
 		width: 60%;
 	}
 }
@@ -408,16 +428,25 @@ input[type="submit"]:hover {
 	.agile-voltsub {
 		width: 70%;
 	}
+	.showBox {
+		width: 70%;
+	}
 }
 
 @media(max-width:800px) {
 	.agile-voltsub {
 		width: 75%;
 	}
+	.showBox {
+		width: 75%;
+	}
 }
 
 @media(max-width:768px) {
 	.agile-voltsub {
+		width: 80%;
+	}
+	.showBox {
 		width: 80%;
 	}
 }
@@ -428,6 +457,9 @@ input[type="submit"]:hover {
 
 @media(max-width:600px) {
 	.agile-voltsub {
+		width: 90%;
+	}
+	.showBox {
 		width: 90%;
 	}
 
@@ -441,6 +473,9 @@ input[type="submit"]:hover {
 
 	@media(max-width:568px) {
 		.agile-voltsub {
+			width: 92%;
+		}
+		.showBox {
 			width: 92%;
 		}
 	}
@@ -477,6 +512,7 @@ input[type="submit"]:hover {
 		.agile-days span.Sunday {
 			width: 33%;
 		}
+		
 	}
 
 	@media(max-width:414px) {
@@ -532,6 +568,9 @@ input[type="submit"]:hover {
 		.agile-to {
 			width: 100%;
 			margin-left: 1%;
+		}
+		.showBox {
+			width: 90%;
 		}
 	}
 }
