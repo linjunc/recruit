@@ -1,0 +1,169 @@
+<!--
+ * @Author: 林俊丞
+ * @Date: 2021-08-28 23:33:14
+ * @LastEditors: 林俊丞
+ * @LastEditTime: 2021-08-29 12:29:56
+ * @Description: 
+-->
+<html lang="en">
+
+<head>
+    <title>2021科技创新协会报名网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content=" volunteer enrollment form Widget a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements">
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <section class="agile-volt">
+        <div class="agile-voltheader">
+            <h1>科协 <label>ASTI</label> 招新</h1>
+        </div>
+        <div class="agile-voltsub">
+            <h2>招新</h2>
+            <form id='recruit' action="" method="post" onsubmit="return mySubmit(this)">
+                <div class="agile-name">
+                    <p>名字</p>
+                    <input type="text" name="username" placeholder="请输入你的名字" required="" autofocus="">
+                </div>
+                <div class="clear"></div>
+                <div class="agile-sex">
+                    <p>性别</p>
+                    <div class="sexBox">
+                        <input type="radio" id="men" value="men" name="username" required="" autofocus="">
+                        <label for="men">男</label>
+                    </div>
+                    <div class="sexBox">
+                        <input type="radio" id="women" value="women" name="username" required="" autofocus="">
+                        <label for="women">女</label>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="agile-email">
+                    <p>学号</p>
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="text" maxlength="11" name="username"
+                        placeholder="输入你的学号" required="">
+                </div>
+                <div class="clear"></div>
+                <div class="agile-address">
+                    <p>电话号码</p>
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="tel" maxlength="11" name="username"
+                        placeholder="请输入电话号码" required="">
+                </div>
+                <!-- 清除浮动 -->
+                <div class="clear"></div>
+                <div class="agilepin-country">
+                    <p>QQ</p>
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="text" maxlength="12" name="username"
+                        placeholder="请输入你的QQ号" required>
+                </div>
+                <div class="clear"></div>
+
+
+
+                <div class="agile-country" aria-required="true">
+                    <p>学院</p>
+                    <select id='allAcademy' onchange="changeSelect(form)" name="username">
+                        <!-- <option value="country">请选择你的学院</option> -->
+                    </select>
+                </div>
+                <div class="agile-country">
+                    <p>专业班级</p>
+                    <select name="username" id="allClass">
+                        <!-- <option value="country">请选择你的班级</option> -->
+                    </select>
+                </div>
+
+
+
+                <div class="clear"></div>
+                <div class="agile-work">
+                    <p>选择你第一志愿部门</p>
+                    <div class="agile-days">
+                        <span class="Monday">
+                            <label for="groupOne">
+                                <input id="groupOne" type="radio" name="week" value="科技活动部">科技活动部<br>
+                            </label>
+                        </span>
+                        <span class="Tuesday">
+                            <label for="groupTwo">
+                                <input id="groupTwo" type="radio" name="week" value="学术培训部">学术培训部<br>
+                            </label>
+                        </span>
+                        <span class="Wednesday">
+                            <label for="groupThree">
+                                <input id="groupThree" type="radio" name="week" value="竞赛管理部">竞赛管理部<br>
+                            </label>
+                        </span>
+                        <span class="Thursday">
+                            <label for="groupFour">
+                                <input id="groupFour" type="radio" name="week" value="宣传部">宣传部<br>
+                            </label>
+                        </span>
+                        <span class="Friday">
+                            <label for="groupFive">
+                                <input id="groupFive" type="radio" name="week" value="秘书部">秘书部<br>
+                            </label>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="agile-work">
+                    <p>选择你第二志愿部门</p>
+                    <div class="agile-days">
+                        <span class="Monday">
+                            <label for="groupOne2">
+                                <input id="groupOne2" type="radio" name="wish" value="科技活动部">科技活动部<br>
+                            </label>
+                        </span>
+                        <span class="Tuesday">
+                            <label for="groupTwo2">
+                                <input id="groupTwo2" type="radio" name="wish" value="学术培训部">学术培训部<br>
+                            </label>
+                        </span>
+                        <span class="Wednesday">
+                            <label for="groupThree2">
+                                <input id="groupThree2" type="radio" name="wish" value="竞赛管理部">竞赛管理部<br>
+                            </label>
+                        </span>
+                        <span class="Thursday">
+                            <label for="groupFour2">
+                                <input id="groupFour2" type="radio" name="wish" value="宣传部">宣传部<br>
+                            </label>
+                        </span>
+                        <span class="Friday">
+                            <label for="groupFive2">
+                                <input id="groupFive2" type="radio" name="wish" value="秘书部">秘书部<br>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <textarea placeholder="请输入300字以内的自我介绍" name="username" id="myInf" cols="30" rows="10"></textarea>
+                <div class="clear"></div>
+                <input id="submitButton" type="submit" value="submit">
+            </form>
+
+            <div class="showBox">
+                你的报名信息：<br>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

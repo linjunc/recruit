@@ -1,0 +1,566 @@
+body {
+	padding: 0;
+	margin: 0;
+	/* background: url(./bg.jpg) no-repeat 0px 0px; */
+	background-color: black;
+	background-position: 65% 65%;
+	background-size: cover;
+
+}
+
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-weight: 400;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"]
+input[type="password"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Exo', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 400;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Exo', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+.text-center {
+	text-align: center;
+}
+
+p {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+
+span {
+	font-family: 'Exo', sans-serif;
+}
+
+
+
+label {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+
+select {
+	font-family: 'Exo', sans-serif;
+}
+
+option {
+	font-family: 'Exo', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+/*--header--*/
+.agile-voltheader h1 {
+	font-size: 35px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #faf6f3;
+	padding: 1em 0 1em;
+}
+
+.agile-voltsub {
+	width: 35%;
+	margin: 0 auto;
+	background: rgba(29, 28, 27, 0.76);
+	box-sizing: border-box;
+	padding: 2em;
+}
+
+.agile-voltsub h2 {
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 2px;
+	padding: 0.2em 0.2em;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 1em 0 1em;
+	color: #fff;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	padding: 0.8em 0.5em 0.8em;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #5acae9;
+	outline: none;
+	background: rgba(255, 255, 255, 0.32);
+	color: #fff;
+
+}
+.agile-sex input[type="radio"] {
+	width: 20px;
+	height: 20px;
+}
+.agile-sex .sexBox {
+	width: 30%;
+	font-size: 15px;
+}
+.agile-sex label {
+	color: white;
+} 
+select {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 1em 0 1em;
+	width: 100%;
+	margin: 1em 0 1em;
+	background: rgba(255, 255, 255, 0.32);
+	color: #fff;
+	letter-spacing: 2px;
+	border: 2px solid #5acae9;
+}
+
+.agile-voltheader label {
+	color: #00e5ff;
+}
+
+option {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	background: rgba(40, 37, 37, 0.5);
+	color: #fff;
+	border: 2px solid #9e2929;
+	letter-spacing: 2px;
+}
+
+.agile-days span.Monday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+.agile-days span.Tuesday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+.agile-days span.Wednesday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+
+}
+
+.agile-days span.Thursday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+.agile-days span.Friday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+.agile-days span.Saturday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+.agile-days span.Sunday {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+}
+
+select {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 1em 0 1em;
+	width: 100%;
+	margin: 0em 0 1em;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.32);
+	color: #fff;
+	letter-spacing: 1px;
+	border: 2px solid #5acae9;
+}
+
+.agile-from {
+	width: 47%;
+	float: left;
+}
+
+.agile-to {
+	width: 47%;
+	float: left;
+	margin-left: 3%;
+}
+
+input[type="submit"] {
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	background: rgba(3, 157, 66, 0.93);
+	color: #fff;
+	border: none;
+	outline: none;
+	width: 45%;
+	margin: 2em auto 0;
+	display: block;
+	padding: 0.5em 0.5em;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #b5334a;
+	color: #fff;
+	transition: 0.5s ease-in;
+}
+
+::-webkit-input-placeholder {
+	color: #fff;
+}
+
+::-moz-input-placeholder {
+	color: #fff;
+}
+
+::-ms-input-placeholder {
+	color: #fff;
+}
+
+
+#myInf {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	text-transform: capitalize;
+	padding: 0.8em 0.5em 0.8em;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #5acae9;
+	outline: none;
+	background: rgba(255, 255, 255, 0.32);
+	color: #fff;
+}
+/* showBox */
+
+.showBox {
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	height: 30%;
+	overflow-x: hidden;
+	background-color: skyblue;
+	color: white;
+	white-space: normal;
+	word-wrap:break-word
+}
+.bgFix {
+	position: fixed;
+	width: 100%;
+}
+/*--responsive--*/
+@media(max-width:1920px) {}
+
+@media(max-width:1680px) {}
+
+@media(max-width:1600px) {
+	
+}
+
+@media(max-width:1440px) {
+	.agile-voltsub {
+		width: 45%;
+	}
+	.showBox {
+		width: 45%;
+	}
+	
+}
+
+@media(max-width:1366px) {
+	.agile-voltsub {
+		width: 50%;
+	}
+	.showBox {
+		width: 50%;
+	}
+}
+
+@media(max-width:1280px) {
+	.agile-voltsub {
+		width: 55%;
+	}
+	.showBox {
+		width: 55%;
+	}
+}
+@media (max-width:1280px) {
+	.showBox {
+		width: 55%;
+	}
+}
+@media(max-width:1080px) {
+	.agile-voltsub {
+		width: 60%;
+	}
+	.showBox {
+		width: 60%;
+	}
+}
+
+@media(max-width:1050px) {}
+
+@media(max-width:1024px) {}
+
+@media(max-width:991px) {}
+
+@media(max-width:900px) {
+	.agile-voltsub {
+		width: 70%;
+	}
+	.showBox {
+		width: 70%;
+	}
+}
+
+@media(max-width:800px) {
+	.agile-voltsub {
+		width: 75%;
+	}
+	.showBox {
+		width: 75%;
+	}
+}
+
+@media(max-width:768px) {
+	.agile-voltsub {
+		width: 80%;
+	}
+	.showBox {
+		width: 80%;
+	}
+}
+
+@media(max-width:736px) {}
+
+@media(max-width:640px) {}
+
+@media(max-width:600px) {
+	.agile-voltsub {
+		width: 90%;
+	}
+	.showBox {
+		width: 90%;
+	}
+
+	.agile-voltheader h1 {
+		font-size: 30px;
+	}
+
+
+	@media(max-width:568px) {
+		.agile-voltsub {
+			width: 92%;
+		}
+		.showBox {
+			width: 92%;
+		}
+	}
+
+	@media(max-width:480px) {
+		.agile-voltheader h1 {
+			font-size: 25px;
+		}
+
+		.agile-days span.Monday {
+			width: 33%;
+		}
+
+		.agile-days span.Tuesday {
+			width: 33%;
+		}
+
+		.agile-days span.Wednesday {
+			width: 33%;
+		}
+
+		.agile-days span.Thursday {
+			width: 33%;
+		}
+
+		.agile-days span.Friday {
+			width: 33%;
+		}
+
+		.agile-days span.Saturday {
+			width: 33%;
+		}
+
+		.agile-days span.Sunday {
+			width: 33%;
+		}
+		
+	}
+
+	@media(max-width:414px) {
+		.agile-days span.Monday {
+			width: 50%;
+		}
+
+		.agile-days span.Tuesday {
+			width: 50%;
+		}
+
+		.agile-days span.Wednesday {
+			width: 50%;
+		}
+
+		.agile-days span.Thursday {
+			width: 50%;
+		}
+
+		.agile-days span.Friday {
+			width: 50%;
+		}
+
+		.agile-days span.Saturday {
+			width: 50%;
+		}
+
+		.agile-days span.Sunday {
+			width: 50%;
+		}
+	}
+
+	@media(max-width:384px) {
+		.agile-voltsub h2 {
+			font-size: 30px;
+		}
+	}
+
+
+	@media(max-width:320px) {
+		.agile-voltsub h2 {
+			font-size: 20px;
+		}
+
+		.agile-voltsub {
+			width: 100%;
+		}
+
+		.agile-from {
+			width: 100%;
+		}
+
+		.agile-to {
+			width: 100%;
+			margin-left: 1%;
+		}
+		.showBox {
+			width: 90%;
+		}
+	}
+}
