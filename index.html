@@ -45,13 +45,13 @@
                 <div class="clear"></div>
                 <div class="agile-email">
                     <p>学号</p>
-                    <input oninput="value=value.replace(/[^\d]/g,'')" oninput="numTrue(this)"  type="text" maxlength="11" name="username"
+                    <input oninput="numTrue(this)"  type="text" maxlength="11" name="username"
                         placeholder="输入你的学号" required="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-address">
                     <p>电话号码</p>
-                    <input oninput="value=value.replace(/[^\d]/g,'')" oninput="phoneTrue(this)" type="tel" maxlength="11" name="username"
+                    <input oninput="phoneTrue(this)" type="tel" maxlength="11" name="username"
                         placeholder="请输入电话号码" required="">
                 </div>
                 <!-- 清除浮动 -->
@@ -82,27 +82,27 @@
                     <div class="agile-days">
                         <span class="Monday">
                             <label for="groupOne">
-                                <input id="groupOne" type="radio" name="week" value="科技活动部">科技活动部<br>
+                                <input id="groupOne" required type="radio" name="week" value="科技活动部">科技活动部<br>
                             </label>
                         </span>
                         <span class="Tuesday">
                             <label for="groupTwo">
-                                <input id="groupTwo" type="radio" name="week" value="学术培训部">学术培训部<br>
+                                <input id="groupTwo" required type="radio" name="week" value="学术培训部">学术培训部<br>
                             </label>
                         </span>
                         <span class="Wednesday">
                             <label for="groupThree">
-                                <input id="groupThree" type="radio" name="week" value="竞赛管理部">竞赛管理部<br>
+                                <input id="groupThree" required type="radio" name="week" value="竞赛管理部">竞赛管理部<br>
                             </label>
                         </span>
                         <span class="Thursday">
                             <label for="groupFour">
-                                <input id="groupFour" type="radio" name="week" value="宣传部">宣传部<br>
+                                <input id="groupFour" required type="radio" name="week" value="宣传部">宣传部<br>
                             </label>
                         </span>
                         <span class="Friday">
                             <label for="groupFive">
-                                <input id="groupFive" type="radio" name="week" value="秘书部">秘书部<br>
+                                <input id="groupFive" required type="radio" name="week" value="秘书部">秘书部<br>
                             </label>
                         </span>
 

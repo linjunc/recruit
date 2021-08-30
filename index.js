@@ -2,7 +2,7 @@
  * @Author: 林俊丞
  * @Date: 2021-08-30 14:23:31
  * @LastEditors: 林俊丞
- * @LastEditTime: 2021-08-31 01:47:20
+ * @LastEditTime: 2021-08-31 02:02:36
  * @Description: 
  */
 const allAcademy = ['信息工程学院', '计算机学院', '自动化学院', '机电工程学院', '物理与光电工程学院', '材料与能源学院', '轻工化工学院', '土木与交通工程学院', '环境科学与工程学院', '外国语学院'];
@@ -42,6 +42,7 @@ function mySubmit(form) {
     const showBox = document.querySelector('.showBox')
     const body = document.querySelector('body')
     myData = [...userData, ...recruitData, ...recruitDataWish]
+    console.log(myData);
     showBox.style.display = 'block'
     showBox.innerHTML = myData
     body.className = 'bgFix'
@@ -74,7 +75,6 @@ function nameTrue(data) {
     console.log(data.value);
     // 判断输入内容是否合规
     let isTrue = isStuName.test(data.value)
-    console.log(isTrue);
     if(!isTrue) {
         data.setCustomValidity('请输入正确的姓名')
     }else{
@@ -82,10 +82,12 @@ function nameTrue(data) {
     }
 }
 function numTrue(data) {
+    data.value = data.value.replace(/[^\d]/g,'')
     const isStuNum = /^(312100|322100)\d{4}$/;
     // console.log(isStuName.test(data.value));
     // 判断输入内容是否合规
     let isTrue = isStuNum.test(data.value)
+    console.log(data.value);
     if(!isTrue) {
         data.setCustomValidity('请输入正确的学号')
     }else{
@@ -93,10 +95,12 @@ function numTrue(data) {
     }
 }
 function phoneTrue(data) {
+    data.value = data.value.replace(/[^\d]/g,'')
     const isStuPhone = /^1(3\d|4[5-9]|5[0-35-9]|6[2567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
     // console.log(isStuName.test(data.value));
     // 判断输入内容是否合规
     let isTrue = isStuPhone.test(data.value)
+    console.log(data.value);
     if(!isTrue) {
         data.setCustomValidity('请输入正确的电话号码')
     }else{
