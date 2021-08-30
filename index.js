@@ -2,7 +2,7 @@
  * @Author: 林俊丞
  * @Date: 2021-08-30 14:23:31
  * @LastEditors: 林俊丞
- * @LastEditTime: 2021-08-31 02:02:36
+ * @LastEditTime: 2021-08-31 02:13:46
  * @Description: 
  */
 const allAcademy = ['信息工程学院', '计算机学院', '自动化学院', '机电工程学院', '物理与光电工程学院', '材料与能源学院', '轻工化工学院', '土木与交通工程学院', '环境科学与工程学院', '外国语学院'];
@@ -62,10 +62,12 @@ function regular(userData) {
 function changeSelect() {
     myClass.innerHTML = '';
     const selectedIndex = myAcademy.selectedIndex;
+    console.log(selectedIndex);
     const oneAcademy = allClass[selectedIndex];
+    console.log(oneAcademy);
     let fragmentChange = document.createDocumentFragment();
-    for (let i = 0; i < oneAcademy[i].length; i++) {
-        fragmentChange.appendChild(new Option(oneAcademy[i], allClass[i]))
+    for (let i = 0; i < oneAcademy.length; i++) {
+        fragmentChange.appendChild(new Option(oneAcademy[i], oneAcademy[i]))
     }
     myClass.appendChild(fragmentChange);
 }
