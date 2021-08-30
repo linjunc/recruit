@@ -63,13 +63,7 @@ span {
 	font-family: 'Exo', sans-serif;
 }
 
-footer {
-	font-family: 'Exo', sans-serif;
-}
 
-footer a {
-	font-family: 'Exo', sans-serif;
-}
 
 label {
 	margin: 0;
@@ -466,9 +460,6 @@ input[type="submit"]:hover {
 		font-size: 30px;
 	}
 
-	footer {
-		font-size: 15px;
-	}
 
 	@media(max-width:568px) {
 		.agile-voltsub {
