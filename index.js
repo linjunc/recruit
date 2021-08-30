@@ -2,7 +2,7 @@
  * @Author: 林俊丞
  * @Date: 2021-08-30 14:23:31
  * @LastEditors: 林俊丞
- * @LastEditTime: 2021-08-30 14:24:57
+ * @LastEditTime: 2021-08-31 01:47:20
  * @Description: 
  */
 const allAcademy = ['信息工程学院', '计算机学院', '自动化学院', '机电工程学院', '物理与光电工程学院', '材料与能源学院', '轻工化工学院', '土木与交通工程学院', '环境科学与工程学院', '外国语学院'];
@@ -50,10 +50,10 @@ function mySubmit(form) {
 
 function regular(userData) {
     const isStuName = /^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/;
-    const isSutNum = /^(312100|322100)\d{4}$/;
+    const isStuNum = /^(312100|322100)\d{4}$/;
     const isStuPhone = /^1(3\d|4[5-9]|5[0-35-9]|6[2567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
     if (!isStuName.test(userData[0])) { console.log('姓名格式不对'); return false }
-    if (!isSutNum.test(userData[2])) { console.log('学号格式不对'); return false }
+    if (!isStuNum.test(userData[2])) { console.log('学号格式不对'); return false }
     if (!isStuPhone.test(userData[3])) { console.log('手机号格式不对');; return false }
 }
 
@@ -67,5 +67,40 @@ function changeSelect() {
         fragmentChange.appendChild(new Option(oneAcademy[i], allClass[i]))
     }
     myClass.appendChild(fragmentChange);
+}
+
+function nameTrue(data) {
+    const isStuName = /^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/;
+    console.log(data.value);
+    // 判断输入内容是否合规
+    let isTrue = isStuName.test(data.value)
+    console.log(isTrue);
+    if(!isTrue) {
+        data.setCustomValidity('请输入正确的姓名')
+    }else{
+        data.setCustomValidity('')
+    }
+}
+function numTrue(data) {
+    const isStuNum = /^(312100|322100)\d{4}$/;
+    // console.log(isStuName.test(data.value));
+    // 判断输入内容是否合规
+    let isTrue = isStuNum.test(data.value)
+    if(!isTrue) {
+        data.setCustomValidity('请输入正确的学号')
+    }else{
+        data.setCustomValidity('')
+    }
+}
+function phoneTrue(data) {
+    const isStuPhone = /^1(3\d|4[5-9]|5[0-35-9]|6[2567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
+    // console.log(isStuName.test(data.value));
+    // 判断输入内容是否合规
+    let isTrue = isStuPhone.test(data.value)
+    if(!isTrue) {
+        data.setCustomValidity('请输入正确的电话号码')
+    }else{
+        data.setCustomValidity('')
+    }
 }
 

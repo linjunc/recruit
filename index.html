@@ -28,7 +28,7 @@
             <form id='recruit' action="" method="post" onsubmit="return mySubmit(this)">
                 <div class="agile-name">
                     <p>名字</p>
-                    <input type="text" name="username" placeholder="请输入你的名字" required="" autofocus="">
+                    <input oninput="nameTrue(this)" type="text" name="username"  placeholder="请输入你的名字" required="" autofocus="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-sex">
@@ -45,13 +45,13 @@
                 <div class="clear"></div>
                 <div class="agile-email">
                     <p>学号</p>
-                    <input oninput="value=value.replace(/[^\d]/g,'')" type="text" maxlength="11" name="username"
+                    <input oninput="value=value.replace(/[^\d]/g,'')" oninput="numTrue(this)"  type="text" maxlength="11" name="username"
                         placeholder="输入你的学号" required="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-address">
                     <p>电话号码</p>
-                    <input oninput="value=value.replace(/[^\d]/g,'')" type="tel" maxlength="11" name="username"
+                    <input oninput="value=value.replace(/[^\d]/g,'')" oninput="phoneTrue(this)" type="tel" maxlength="11" name="username"
                         placeholder="请输入电话号码" required="">
                 </div>
                 <!-- 清除浮动 -->
