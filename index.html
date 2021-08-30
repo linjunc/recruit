@@ -1,12 +1,5 @@
-<!--
- * @Author: 林俊丞
- * @Date: 2021-08-28 23:33:14
- * @LastEditors: 林俊丞
- * @LastEditTime: 2021-08-30 12:13:54
- * @Description: 
--->
-<html lang="en">
 
+<html lang="en">
 <head>
     <title>2021科技创新协会报名网站</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,31 +45,36 @@
                 <div class="clear"></div>
                 <div class="agile-email">
                     <p>学号</p>
-                    <input oninput = "value=value.replace(/[^\d]/g,'')" type="text" maxlength="11" name="username" placeholder="输入你的学号" required="">
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="text" maxlength="11" name="username"
+                        placeholder="输入你的学号" required="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-address">
                     <p>电话号码</p>
-                    <input oninput = "value=value.replace(/[^\d]/g,'')" type="tel" name="username" placeholder="请输入电话号码" required="">
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="tel" maxlength="11" name="username"
+                        placeholder="请输入电话号码" required="">
                 </div>
                 <!-- 清除浮动 -->
                 <div class="clear"></div>
                 <div class="agilepin-country">
                     <p>QQ</p>
-                    <input oninput = "value=value.replace(/[^\d]/g,'')" type="text" name="username" placeholder="请输入你的QQ号" required>
+                    <input oninput="value=value.replace(/[^\d]/g,'')" type="text" maxlength="12" name="username"
+                        placeholder="请输入你的QQ号" required>
                 </div>
                 <div class="clear"></div>
+
                 <div class="agile-country" aria-required="true">
                     <p>学院</p>
-                    <select name="username">
-                        <option value="country">请选择你的学院</option>
-                        <option value="信息工程学院">信息工程学院</option>
-                        <option value="计算机学院">计算机学院</option>
+                    <select id='allAcademy' onchange="changeSelect(form)" name="username">
+                        <!-- <option value="country">请选择你的学院</option> -->
                     </select>
                 </div>
                 <div class="agile-country">
                     <p>专业班级</p>
-                    <input type="text" name="username" placeholder="请输入你的专业班级，例如：21电子信息类1班">
+
+                    <select name="username" id="allClass">
+                        <!-- <option value="country">请选择你的班级</option> -->
+                    </select>
                 </div>
                 <div class="clear"></div>
                 <div class="agile-work">
@@ -146,11 +144,9 @@
                 <div class="clear"></div>
                 <input id="submitButton" type="submit" value="submit">
             </form>
-            
-                <div class="showBox">
-                    你的报名信息：<br>
-                </div>
-        
+            <div class="showBox">
+                你的报名信息：<br>
+            </div>
         </div>
     </section>
 
