@@ -1,11 +1,14 @@
-
 <html lang="en">
+
 <head>
     <title>2021科技创新协会报名网站</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="keywords"
         content=" volunteer enrollment form Widget a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 验证码 -->
+    <script src="https://v-cn.vaptcha.com/v3.js"></script>
     <script type="application/x-javascript">
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -24,35 +27,36 @@
             <h1>科协 <label>ASTI</label> 招新</h1>
         </div>
         <div class="agile-voltsub">
-            <h2>招新</h2>
+            <h2>招新报名表</h2>
             <form id='recruit' action="" method="post" onsubmit="return mySubmit(this)">
                 <div class="agile-name">
                     <p>名字</p>
-                    <input oninput="nameTrue(this)" type="text" name="username"  placeholder="请输入你的名字" required="" autofocus="">
+                    <input oninput="nameTrue(this)" type="text" name="username" placeholder="请输入你的名字" required=""
+                        autofocus="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-sex">
                     <p>性别</p>
                     <div class="sexBox">
-                        <input type="radio" id="men" value="men" name="username" required="" autofocus="">
+                        <input type="radio" id="men" value="男" name="username" required="" autofocus="">
                         <label for="men">男</label>
                     </div>
                     <div class="sexBox">
-                        <input type="radio" id="women" value="women" name="username" required="" autofocus="">
+                        <input type="radio" id="women" value="女" name="username" required="" autofocus="">
                         <label for="women">女</label>
                     </div>
                 </div>
                 <div class="clear"></div>
                 <div class="agile-email">
                     <p>学号</p>
-                    <input oninput="numTrue(this)"  type="text" maxlength="10" name="username"
-                        placeholder="输入你的学号" required="">
+                    <input oninput="numTrue(this)" type="text" maxlength="10" name="username" placeholder="输入你的学号"
+                        required="">
                 </div>
                 <div class="clear"></div>
                 <div class="agile-address">
                     <p>电话号码</p>
-                    <input oninput="phoneTrue(this)" type="tel" maxlength="11" name="username"
-                        placeholder="请输入电话号码" required="">
+                    <input oninput="phoneTrue(this)" type="tel" maxlength="11" name="username" placeholder="请输入电话号码"
+                        required="">
                 </div>
                 <!-- 清除浮动 -->
                 <div class="clear"></div>
@@ -140,7 +144,7 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <textarea placeholder="请输入300字以内的自我介绍" name="username" id="myInf" cols="30" rows="10"></textarea>
+                <textarea placeholder="请输入900字以内的自我介绍" name="username" id="myInf" maxlength="902" cols="30" rows="10"></textarea>
                 <div class="clear"></div>
                 <input id="submitButton" type="submit" value="submit">
             </form>
